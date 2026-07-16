@@ -4,6 +4,7 @@ import './App.css'
 
 const phoneDisplay = '+49 177 4275378'
 const phoneLink = '+491774275378'
+const whatsappUrl = `https://wa.me/${phoneLink.replace('+', '')}?text=${encodeURIComponent('Hallo, ich möchte ein Fahrzeug zur Abholung anfragen.')}`
 
 const Icon = ({ name, size = 22 }) => {
   const paths = {
@@ -66,7 +67,7 @@ function App() {
       <div className="topbar">
         <div className="container topbar-inner">
           <span><Icon name="map" size={15} /> Duisburg & Umgebung</span>
-          <span>Persönlich erreichbar: <a href={`tel:${phoneLink}`}>{phoneDisplay}</a></span>
+          <span className="topbar-contact">Persönlich erreichbar: <a href={`tel:${phoneLink}`}><Icon name="phone" size={14}/>{phoneDisplay}</a><i></i><a href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={14}/>WhatsApp</a></span>
         </div>
       </div>
 
@@ -83,7 +84,10 @@ function App() {
             <a href="#leistungen" onClick={closeMenu}>Leistungen</a>
             <a href="#ablauf" onClick={closeMenu}>So geht’s</a>
             <a href="#faq" onClick={closeMenu}>FAQ</a>
-            <a className="nav-phone" href={`tel:${phoneLink}`}><Icon name="phone" size={18} /> Jetzt anrufen</a>
+            <div className="nav-contact">
+              <a className="nav-cta nav-call" href={`tel:${phoneLink}`}><Icon name="phone" size={18} /> Anrufen</a>
+              <a className="nav-cta nav-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={18} /> WhatsApp</a>
+            </div>
           </nav>
         </div>
       </header>
@@ -102,7 +106,10 @@ function App() {
               </div>
               <div className="hero-actions">
                 <a className="button button-primary" href="#anfrage">Fahrzeug anfragen <Icon name="arrow" size={19}/></a>
-                <a className="text-link" href={`tel:${phoneLink}`}><Icon name="phone" size={19}/> {phoneDisplay}</a>
+                <div className="hero-contact-actions">
+                  <a className="contact-action" href={`tel:${phoneLink}`}><Icon name="phone" size={19}/><span><small>Direkt anrufen</small>{phoneDisplay}</span></a>
+                  <a className="contact-action whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={19}/><span><small>Nachricht senden</small>WhatsApp</span></a>
+                </div>
               </div>
             </div>
             <div className="hero-card" id="anfrage">
@@ -110,6 +117,11 @@ function App() {
               <h2>Fahrzeug jetzt anfragen</h2>
               <p>Wir melden uns schnellstmöglich bei Ihnen.</p>
               <form onSubmit={handleSubmit}>
+                <div className="form-direct-contact">
+                  <span>Lieber direkt Kontakt aufnehmen?</span>
+                  <a href={`tel:${phoneLink}`}><Icon name="phone" size={16}/> Anrufen</a>
+                  <a href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={16}/> WhatsApp</a>
+                </div>
                 <div className="field-row">
                   <label><span>Name *</span><input name="name" type="text" placeholder="Ihr Name" required /></label>
                   <label><span>Telefon *</span><input name="phone" type="tel" placeholder="Ihre Nummer" required /></label>
@@ -194,7 +206,10 @@ function App() {
               <span className="section-label">Gut zu wissen</span>
               <h2>Häufige Fragen</h2>
               <p>Ihre Frage ist nicht dabei? Rufen Sie uns einfach an – wir helfen persönlich weiter.</p>
-              <a className="text-link dark" href={`tel:${phoneLink}`}><Icon name="phone" size={19}/> {phoneDisplay}</a>
+              <div className="faq-contact-actions">
+                <a className="text-link dark" href={`tel:${phoneLink}`}><Icon name="phone" size={19}/> {phoneDisplay}</a>
+                <a className="text-link dark whatsapp-link" href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={19}/> Per WhatsApp schreiben</a>
+              </div>
             </div>
             <div className="accordion">
               {faqs.map(([question, answer], index) => <div className={`faq-item ${openFaq === index ? 'active' : ''}`} key={question}>
@@ -212,7 +227,7 @@ function App() {
             <div><span className="section-label light">Bereit für die Abholung?</span><h2>Jetzt Fahrzeug unverbindlich anfragen.</h2></div>
             <div className="banner-actions">
               <a className="button button-primary" href="#anfrage">Online anfragen <Icon name="arrow" size={19}/></a>
-              <a className="button button-outline" href={`https://wa.me/${phoneLink.replace('+','')}?text=${encodeURIComponent('Hallo, ich möchte ein Fahrzeug zur Abholung anfragen.')}`} target="_blank" rel="noreferrer"><Icon name="message" size={19}/> WhatsApp</a>
+              <a className="button button-outline" href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={19}/> WhatsApp</a>
             </div>
           </div>
         </section>
@@ -245,7 +260,7 @@ function App() {
       <footer>
         <div className="container footer-main">
           <div><a className="brand footer-brand" href="#top"><span className="brand-mark"><Icon name="recycle" size={25}/></span><span>AUTO-<strong>VERSCHROTTUNG</strong><i>24</i></span></a><p>Ihr persönlicher Ansprechpartner für die unkomplizierte Fahrzeugabholung in Duisburg und Umgebung.</p></div>
-          <div><h3>Kontakt</h3><a href={`tel:${phoneLink}`}>{phoneDisplay}</a><a href="mailto:miguel.ruben@web.de">miguel.ruben@web.de</a><span>47169 Duisburg</span></div>
+          <div><h3>Kontakt</h3><a href={`tel:${phoneLink}`}><Icon name="phone" size={14}/> {phoneDisplay}</a><a href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={14}/> WhatsApp schreiben</a><a href="mailto:miguel.ruben@web.de">miguel.ruben@web.de</a><span>47169 Duisburg</span></div>
           <div><h3>Navigation</h3><a href="#leistungen">Leistungen</a><a href="#ablauf">So geht’s</a><a href="#faq">FAQ</a></div>
           <div><h3>Rechtliches</h3><a href="#impressum">Impressum</a><a href="#datenschutz">Datenschutz</a></div>
         </div>
@@ -254,6 +269,7 @@ function App() {
 
       <div className="mobile-bar">
         <a href={`tel:${phoneLink}`}><Icon name="phone" size={19}/> Anrufen</a>
+        <a className="mobile-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={19}/> WhatsApp</a>
         <a href="#anfrage"><Icon name="file" size={19}/> Anfrage</a>
       </div>
     </div>
