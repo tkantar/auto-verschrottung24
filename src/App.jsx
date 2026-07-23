@@ -66,7 +66,7 @@ function App() {
     <div className="site-shell">
       <div className="topbar">
         <div className="container topbar-inner">
-          <span><Icon name="map" size={15} /> Duisburg & Umgebung</span>
+          <span><Icon name="map" size={15} /> Bundesweit in Deutschland</span>
           <span className="topbar-contact">Persönlich erreichbar: <a href={`tel:${phoneLink}`}><Icon name="phone" size={14}/>{phoneDisplay}</a><i></i><a href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={14}/>WhatsApp</a></span>
         </div>
       </div>
@@ -98,7 +98,7 @@ function App() {
             <div className="hero-copy">
               <div className="eyebrow"><span></span> Einfach. Schnell. Verantwortungsbewusst.</div>
               <h1>Ihr altes Auto.<br/><em>Unser Auftrag.</em></h1>
-              <p>Wir holen Ihr Altfahrzeug in Duisburg und Umgebung unkompliziert ab und führen es einer fachgerechten Verwertung zu.</p>
+              <p>Wir holen Ihr Altfahrzeug bundesweit in ganz Deutschland unkompliziert ab und führen es einer fachgerechten Verwertung zu.</p>
               <div className="hero-highlights">
                 <span><Icon name="check" size={18}/> Kostenlose Anfrage</span>
                 <span><Icon name="check" size={18}/> Schnelle Rückmeldung</span>
@@ -259,12 +259,12 @@ function App() {
 
       <footer>
         <div className="container footer-main">
-          <div><a className="brand footer-brand" href="#top"><span className="brand-mark"><Icon name="recycle" size={25}/></span><span>AUTO-<strong>VERSCHROTTUNG</strong><i>24</i></span></a><p>Ihr persönlicher Ansprechpartner für die unkomplizierte Fahrzeugabholung in Duisburg und Umgebung.</p></div>
+          <div><a className="brand footer-brand" href="#top"><span className="brand-mark"><Icon name="recycle" size={25}/></span><span>AUTO-<strong>VERSCHROTTUNG</strong><i>24</i></span></a><p>Ihr persönlicher Ansprechpartner für die unkomplizierte Fahrzeugabholung bundesweit in ganz Deutschland.</p></div>
           <div><h3>Kontakt</h3><a href={`tel:${phoneLink}`}><Icon name="phone" size={14}/> {phoneDisplay}</a><a href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={14}/> WhatsApp schreiben</a><a href="mailto:miguel.ruben@web.de">miguel.ruben@web.de</a><span>47169 Duisburg</span></div>
           <div><h3>Navigation</h3><a href="#leistungen">Leistungen</a><a href="#ablauf">So geht’s</a><a href="#faq">FAQ</a></div>
           <div><h3>Rechtliches</h3><a href="#impressum">Impressum</a><a href="#datenschutz">Datenschutz</a></div>
         </div>
-        <div className="container footer-bottom"><span>© {new Date().getFullYear()} Auto-Verschrottung24</span><span>Aus Duisburg. Für die Region.</span></div>
+        <div className="container footer-bottom"><span>© {new Date().getFullYear()} Auto-Verschrottung24</span><span>Aus Duisburg. Bundesweit für Sie da.</span></div>
       </footer>
 
       <div className="mobile-bar">
