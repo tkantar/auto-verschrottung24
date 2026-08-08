@@ -32,11 +32,24 @@ const benefits = [
 ]
 
 const faqs = [
-  ['Was kostet die Abholung?', 'Die Abholung im vereinbarten Einsatzgebiet ist für Sie in der Regel kostenlos. Nach Ihrer Anfrage bestätigen wir Ihnen alle Konditionen transparent.'],
+  ['Was kostet die Abholung?', 'Die Konditionen werden individuell anhand Ihrer Anfrage, des Fahrzeugzustands und des Standorts abgestimmt.'],
   ['Muss mein Auto noch fahrbereit sein?', 'Nein. Wir holen auch Unfallwagen, Fahrzeuge mit Motorschaden und Autos ohne TÜV ab. Bitte beschreiben Sie den Zustand möglichst genau.'],
   ['Welche Unterlagen werden benötigt?', 'Bitte halten Sie Fahrzeugschein, Fahrzeugbrief und einen gültigen Ausweis bereit. Fehlende Unterlagen können wir vorab telefonisch besprechen.'],
   ['Wie schnell ist eine Abholung möglich?', 'Oft können wir kurzfristige Termine anbieten. Der genaue Termin richtet sich nach Standort und Auslastung und wird persönlich mit Ihnen abgestimmt.'],
 ]
+
+const faqStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(([question, answer]) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: answer,
+    },
+  })),
+}
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -64,6 +77,10 @@ function App() {
 
   return (
     <div className="site-shell">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
       <div className="topbar">
         <div className="container topbar-inner">
           <span><Icon name="map" size={15} /> Bundesweit in Deutschland</span>
@@ -97,7 +114,7 @@ function App() {
           <div className="container hero-grid">
             <div className="hero-copy">
               <div className="eyebrow"><span></span> Einfach. Schnell. Verantwortungsbewusst.</div>
-              <h1>Ihr altes Auto.<br/><em>Unser Auftrag.</em></h1>
+              <h1>Auto verschrotten.<br/><em>Bundesweit organisiert.</em></h1>
               <p>Wir holen Ihr Altfahrzeug bundesweit in ganz Deutschland unkompliziert ab und führen es einer fachgerechten Verwertung zu.</p>
               <div className="hero-highlights">
                 <span><Icon name="check" size={18}/> Kostenlose Anfrage</span>
@@ -191,10 +208,10 @@ function App() {
               <h2>Auch wenn nichts mehr fährt.</h2>
               <p>Ob altersbedingt, nach einem Schaden oder ohne gültige Hauptuntersuchung – fragen Sie Ihr Fahrzeug einfach an.</p>
               <ul className="check-list">
-                <li><Icon name="check" size={18}/> Altautos & Schrottfahrzeuge</li>
-                <li><Icon name="check" size={18}/> Unfallwagen</li>
-                <li><Icon name="check" size={18}/> Fahrzeuge mit Motorschaden</li>
-                <li><Icon name="check" size={18}/> Fahrzeuge ohne TÜV</li>
+                <li><Icon name="check" size={18}/> <a href="/schrottauto-verkaufen/">Altautos & Schrottfahrzeuge</a></li>
+                <li><Icon name="check" size={18}/> <a href="/unfallwagen-verkaufen/">Unfallwagen</a></li>
+                <li><Icon name="check" size={18}/> <a href="/auto-mit-motorschaden-verkaufen/">Fahrzeuge mit Motorschaden</a></li>
+                <li><Icon name="check" size={18}/> <a href="/auto-ohne-tuev/">Fahrzeuge ohne TÜV</a></li>
               </ul>
             </div>
           </div>
@@ -251,7 +268,6 @@ function App() {
               <h3>Verantwortlicher</h3><p>Ruben Eloi Miguel, Aldenraderstr. 15D, 47169 Duisburg, E-Mail: miguel.ruben@web.de.</p>
               <h3>Kontaktaufnahme</h3><p>Wenn Sie uns per E-Mail, Telefon, WhatsApp oder über das Anfrageformular kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage. Das Formular öffnet Ihr lokales E-Mail-Programm; auf dieser Webseite werden dabei keine Formulardaten gespeichert.</p>
               <h3>Ihre Rechte</h3><p>Sie haben im Rahmen der gesetzlichen Vorgaben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit sowie ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde.</p>
-              <p className="legal-note">Hinweis: Vor dem gewerblichen Livegang sollten Impressum und Datenschutz rechtlich geprüft und um Angaben zur Unternehmensform, Umsatzsteuer-ID oder Aufsichtsbehörde ergänzt werden, sofern diese auf Ihr Angebot zutreffen.</p>
             </div>
           </div>
         </section>
@@ -261,7 +277,7 @@ function App() {
         <div className="container footer-main">
           <div><a className="brand footer-brand" href="#top"><span className="brand-mark"><Icon name="recycle" size={25}/></span><span>AUTO-<strong>VERSCHROTTUNG</strong><i>24</i></span></a><p>Ihr persönlicher Ansprechpartner für die unkomplizierte Fahrzeugabholung bundesweit in ganz Deutschland.</p></div>
           <div><h3>Kontakt</h3><a href={`tel:${phoneLink}`}><Icon name="phone" size={14}/> {phoneDisplay}</a><a href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="message" size={14}/> WhatsApp schreiben</a><a href="mailto:miguel.ruben@web.de">miguel.ruben@web.de</a><span>47169 Duisburg</span></div>
-          <div><h3>Navigation</h3><a href="#leistungen">Leistungen</a><a href="#ablauf">So geht’s</a><a href="#faq">FAQ</a></div>
+          <div><h3>Leistungen</h3><a href="/autoverschrottung/">Autoverschrottung</a><a href="/fahrzeugabholung/">Fahrzeugabholung</a><a href="/schrottauto-verkaufen/">Schrottauto anfragen</a></div>
           <div><h3>Rechtliches</h3><a href="#impressum">Impressum</a><a href="#datenschutz">Datenschutz</a></div>
         </div>
         <div className="container footer-bottom"><span>© {new Date().getFullYear()} Auto-Verschrottung24</span><span>Aus Duisburg. Bundesweit für Sie da.</span></div>

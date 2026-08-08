@@ -1,0 +1,193 @@
+export const seoPages = [
+  {
+    path: '/autoverschrottung/', type: 'service', nav: 'Autoverschrottung',
+    title: 'Auto verschrotten lassen – bundesweit anfragen | Auto-Verschrottung24',
+    description: 'Autoverschrottung bundesweit anfragen: Fahrzeugdaten übermitteln, Konditionen individuell klären und die Abholung persönlich abstimmen.',
+    h1: 'Autoverschrottung bundesweit anfragen',
+    intro: 'Sie möchten ein altes, beschädigtes oder nicht mehr fahrbereites Auto verschrotten lassen? Senden Sie uns die wichtigsten Fahrzeugdaten. Wir prüfen Ihre Anfrage individuell und stimmen die mögliche Abholung mit Ihnen ab.',
+    sections: [
+      ['Für welche Fahrzeuge eignet sich die Anfrage?', 'Eine Anfrage ist für Altautos, Schrottfahrzeuge, Unfallwagen sowie Fahrzeuge mit Motor- oder Getriebeschaden möglich. Auch ein abgelaufener TÜV oder fehlende Fahrbereitschaft ist kein Grund, auf eine Anfrage zu verzichten. Entscheidend sind der tatsächliche Zustand und der Standort des Fahrzeugs.', ['Altautos und Schrottfahrzeuge', 'Nicht fahrbereite Fahrzeuge', 'Unfall- und Schadensfahrzeuge', 'Fahrzeuge ohne gültige Hauptuntersuchung']],
+      ['So läuft Ihre Anfrage ab', 'Übermitteln Sie Marke, Modell, Baujahr, Fahrzeugstandort und eine kurze Zustandsbeschreibung. Anschließend werden die Einzelheiten persönlich geklärt. Dazu gehören insbesondere Erreichbarkeit des Standorts, vorhandene Unterlagen und ein möglicher Abholtermin. Konditionen werden nicht pauschal versprochen, sondern anhand der konkreten Anfrage abgestimmt.'],
+      ['Vor der Abholung beachten', 'Entfernen Sie persönliche Gegenstände aus dem Fahrzeug und halten Sie vorhandene Fahrzeugunterlagen bereit. Teilen Sie uns frühzeitig mit, wenn das Auto nicht rollfähig ist, Schlüssel fehlen oder der Standort besondere Zufahrtsbedingungen hat. So lässt sich die Abholung realistisch vorbereiten.'],
+    ],
+    faqs: [['Ist die Abholung immer kostenlos?', 'Nein. Die Konditionen werden für jede Anfrage individuell anhand von Fahrzeug, Zustand und Standort abgestimmt.'], ['Kann ich ein nicht fahrbereites Auto anfragen?', 'Ja. Beschreiben Sie Schäden und Fahrbereitschaft möglichst genau, damit die Anfrage passend geprüft werden kann.'], ['Ist die Anfrage bundesweit möglich?', 'Ja, Fahrzeuganfragen sind aus ganz Deutschland möglich.']],
+    related: ['/fahrzeugabholung/', '/autoentsorgung/', '/ratgeber/auto-verschrotten-ablauf/'],
+  },
+  {
+    path: '/autoentsorgung/', type: 'service', nav: 'Autoentsorgung',
+    title: 'Autoentsorgung bundesweit anfragen | Auto-Verschrottung24',
+    description: 'Auto entsorgen: bundesweite Fahrzeuganfrage für alte, defekte oder nicht fahrbereite Autos. Ablauf und Abholung individuell abstimmen.',
+    h1: 'Autoentsorgung unkompliziert anfragen',
+    intro: 'Wenn ein Fahrzeug dauerhaft nicht mehr genutzt werden soll, entstehen praktische Fragen zu Zustand, Standort, Unterlagen und Abholung. Wir nehmen Ihre Fahrzeugdaten bundesweit entgegen und besprechen die nächsten Schritte individuell.',
+    sections: [
+      ['Wann kommt eine Autoentsorgung infrage?', 'Eine Entsorgungsanfrage kann sinnvoll sein, wenn eine Reparatur nicht mehr vorgesehen ist, das Fahrzeug lange stillsteht oder nicht mehr fahrbereit ist. Auch Unfallfahrzeuge und Autos ohne TÜV können angefragt werden. Ob und zu welchen Konditionen eine Abholung möglich ist, hängt vom Einzelfall ab.'],
+      ['Welche Angaben helfen bei der Prüfung?', 'Eine genaue Beschreibung vermeidet Rückfragen. Wichtig sind Marke und Modell, Baujahr, Postleitzahl und Ort sowie Informationen zu Schäden und Fahrbereitschaft.', ['Fahrzeugtyp und Baujahr', 'Standort und Zugänglichkeit', 'Bekannte Schäden', 'Vorhandene Schlüssel und Unterlagen']],
+      ['Autoentsorgung und Autoverschrottung', 'Beide Begriffe werden häufig ähnlich verwendet. Auf dieser Seite steht die praktische Entsorgungsanfrage im Mittelpunkt: Fahrzeug erfassen, Situation klären und eine mögliche Abholung abstimmen. Ausführliche Informationen zum Verschrotten finden Sie auf unserer Seite zur Autoverschrottung.'],
+    ],
+    faqs: [['Kann ich ein abgemeldetes Auto anfragen?', 'Ja. Geben Sie bei der Anfrage an, dass das Fahrzeug abgemeldet ist und ob es noch bewegt werden kann.'], ['Was kostet die Autoentsorgung?', 'Pauschale Kosten lassen sich nicht nennen. Die Konditionen richten sich nach der individuellen Anfrage.'], ['Muss das Auto noch TÜV haben?', 'Nein. Auch Fahrzeuge ohne gültigen TÜV können angefragt werden.']],
+    related: ['/autoverschrottung/', '/fahrzeugabholung/', '/ratgeber/autoverschrottung-kosten/'],
+  },
+  {
+    path: '/schrottauto-verkaufen/', type: 'service', nav: 'Schrottauto anfragen',
+    title: 'Schrottauto verkaufen: Anfrage bundesweit | Auto-Verschrottung24',
+    description: 'Schrottauto bundesweit anfragen: Zustand und Standort übermitteln und individuell klären, welche Konditionen möglich sind.',
+    h1: 'Schrottauto verkaufen – bundesweit anfragen',
+    intro: 'Ob für ein Schrottauto noch individuelle Konditionen möglich sind, hängt von Fahrzeug, Zustand und Standort ab. Mit einer genauen Anfrage schaffen Sie die Grundlage für eine realistische Einschätzung.',
+    sections: [
+      ['Welche Informationen sind wichtig?', 'Nennen Sie Marke, Modell, Baujahr und Standort. Beschreiben Sie außerdem bekannte Schäden, fehlende Teile und ob das Fahrzeug roll- oder fahrbereit ist. Fotos können nach der ersten Kontaktaufnahme bei der Einschätzung helfen.'],
+      ['Individuelle Prüfung statt Pauschalversprechen', 'Ein fester Betrag lässt sich ohne Fahrzeugdaten nicht seriös nennen. Zustand, Vollständigkeit, Standort und organisatorischer Aufwand unterscheiden sich von Anfrage zu Anfrage. Deshalb werden mögliche Konditionen persönlich abgestimmt.'],
+      ['Auch beschädigte Fahrzeuge anfragen', 'Ein Motorschaden, Getriebeschaden, Unfall oder fehlender TÜV schließt eine Anfrage nicht aus. Wählen Sie bei spezifischen Schäden die passende Leistungsseite, um die dafür relevanten Hinweise zu erhalten.', ['Unfallwagen', 'Fahrzeuge mit Motorschaden', 'Fahrzeuge mit Getriebeschaden', 'Autos ohne TÜV']],
+    ],
+    faqs: [['Bekomme ich immer Geld für mein Schrottauto?', 'Nein, dafür gibt es kein Pauschalversprechen. Mögliche Konditionen ergeben sich erst aus der individuellen Prüfung.'], ['Kann das Fahrzeug abgeholt werden?', 'Eine mögliche Abholung wird anhand von Standort, Zustand und Zugänglichkeit abgestimmt.'], ['Welche Daten sollte ich senden?', 'Hilfreich sind Marke, Modell, Baujahr, Standort, Schäden und Angaben zur Fahrbereitschaft.']],
+    related: ['/unfallwagen-verkaufen/', '/auto-mit-motorschaden-verkaufen/', '/fahrzeugabholung/'],
+  },
+  {
+    path: '/fahrzeugabholung/', type: 'service', nav: 'Fahrzeugabholung',
+    title: 'Fahrzeugabholung bundesweit anfragen | Auto-Verschrottung24',
+    description: 'Fahrzeugabholung bundesweit anfragen – auch für nicht fahrbereite Autos. Standort, Zustand und Konditionen persönlich abstimmen.',
+    h1: 'Fahrzeugabholung bundesweit',
+    intro: 'Ein nicht fahrbereites oder abgemeldetes Fahrzeug lässt sich nicht ohne Weiteres selbst transportieren. Wir prüfen bundesweit, wie eine Abholung anhand Ihrer konkreten Fahrzeug- und Standortangaben organisiert werden kann.',
+    sections: [
+      ['Damit die Abholung planbar wird', 'Beschreiben Sie nicht nur das Fahrzeug, sondern auch seinen Standort. Wichtig ist, ob es frei zugänglich steht, rollen und lenken kann und ob Zufahrtshindernisse bestehen. Diese Details beeinflussen die organisatorische Planung.'],
+      ['Vom Erstkontakt bis zum Termin', 'Nach Eingang der Anfrage werden offene Punkte persönlich geklärt. Wenn eine Abholung vereinbart wird, stimmen wir Ort und Termin mit Ihnen ab. Verbindliche Konditionen erhalten Sie individuell und nicht über pauschale Aussagen auf der Website.', ['Fahrzeugdaten senden', 'Zustand und Standort klären', 'Konditionen abstimmen', 'Termin vereinbaren']],
+      ['Welche Fahrzeuge können angefragt werden?', 'Anfragen sind für Altautos, Unfallwagen, Fahrzeuge mit technischen Schäden und Autos ohne TÜV möglich. Geben Sie bei stark beschädigten oder nicht rollfähigen Fahrzeugen möglichst genaue Informationen an.'],
+    ],
+    faqs: [['Ist die Fahrzeugabholung kostenlos?', 'Das wird individuell entschieden. Fahrzeug, Zustand, Standort und Aufwand fließen in die Konditionen ein.'], ['Werden auch nicht fahrbereite Autos abgeholt?', 'Solche Fahrzeuge können angefragt werden. Bitte beschreiben Sie Rollfähigkeit, Lenkbarkeit und Schäden genau.'], ['In welchen Regionen ist eine Anfrage möglich?', 'Anfragen sind bundesweit aus Deutschland möglich.']],
+    related: ['/autoverschrottung/', '/auto-ohne-tuev/', '/ratgeber/auto-verschrotten-ablauf/'],
+  },
+  {
+    path: '/unfallwagen-verkaufen/', type: 'service', nav: 'Unfallwagen',
+    title: 'Unfallwagen verkaufen und abholen lassen | Bundesweit',
+    description: 'Unfallwagen bundesweit anfragen: Schäden und Standort beschreiben, Konditionen individuell klären und mögliche Abholung abstimmen.',
+    h1: 'Unfallwagen verkaufen – Anfrage und Abholung',
+    intro: 'Nach einem Unfall ist oft unklar, ob sich eine Reparatur noch lohnt oder wie ein nicht fahrbereites Fahrzeug bewegt werden kann. Senden Sie uns die Fahrzeug- und Schadensdaten für eine individuelle Prüfung.',
+    sections: [
+      ['Schaden möglichst genau beschreiben', 'Geben Sie an, welche Fahrzeugbereiche betroffen sind, ob Flüssigkeiten austreten und ob Räder, Lenkung und Bremsen funktionieren. Der Standort und seine Zugänglichkeit sind für eine mögliche Abholung ebenso wichtig.'],
+      ['Totalschaden oder reparierbarer Unfallwagen?', 'Diese Entscheidung hängt nicht allein vom sichtbaren Schaden ab. Reparaturkosten, Fahrzeugwert und persönliche Situation spielen zusammen. Wir geben keine technische Reparaturberatung, können aber Ihre Fahrzeuganfrage anhand der übermittelten Angaben prüfen.'],
+      ['So bereiten Sie die Anfrage vor', 'Notieren Sie Marke, Modell, Baujahr, Kilometerstand und Standort. Ergänzen Sie eine ehrliche Schadensbeschreibung und halten Sie vorhandene Unterlagen bereit.', ['Schadensbereiche nennen', 'Fahrbereitschaft angeben', 'Standort beschreiben', 'Rückfragen ermöglichen']],
+    ],
+    faqs: [['Kann ich einen nicht fahrbereiten Unfallwagen anfragen?', 'Ja. Teilen Sie den Zustand und mögliche Einschränkungen bei der Abholung genau mit.'], ['Gibt es einen festen Ankaufspreis?', 'Nein. Mögliche Konditionen werden erst nach Prüfung der individuellen Angaben abgestimmt.'], ['Ist eine bundesweite Anfrage möglich?', 'Ja, Sie können einen Unfallwagen aus ganz Deutschland anfragen.']],
+    related: ['/schrottauto-verkaufen/', '/fahrzeugabholung/', '/autoverschrottung/'],
+  },
+  {
+    path: '/auto-mit-motorschaden-verkaufen/', type: 'service', nav: 'Motorschaden',
+    title: 'Auto mit Motorschaden verkaufen | Bundesweit anfragen',
+    description: 'Auto mit Motorschaden bundesweit anfragen. Fahrzeugzustand übermitteln, individuelle Konditionen klären und Abholung abstimmen.',
+    h1: 'Auto mit Motorschaden verkaufen',
+    intro: 'Ein Motorschaden kann eine Reparatur wirtschaftlich unattraktiv machen. Wenn Sie das betroffene Fahrzeug nicht weiter nutzen möchten, können Sie es mit einer genauen Zustandsbeschreibung bundesweit anfragen.',
+    sections: [
+      ['Welche Angaben zum Motorschaden helfen?', 'Teilen Sie mit, ob eine Diagnose vorliegt, welche Symptome aufgetreten sind und ob der Motor noch startet. Vermutungen sollten als solche gekennzeichnet werden. Eine genaue Beschreibung ermöglicht eine realistischere Prüfung.'],
+      ['Reparieren oder Fahrzeug anfragen?', 'Vergleichen Sie einen belastbaren Reparaturkostenvoranschlag mit Zustand, Alter und Nutzungsperspektive des Autos. Wenn Sie sich gegen eine Reparatur entscheiden, können Sie Fahrzeugdaten und Standort für eine individuelle Anfrage übermitteln.'],
+      ['Abholung eines nicht fahrbereiten Autos', 'Ist das Fahrzeug nicht mehr fahrbereit, sind Rollfähigkeit, Lenkbarkeit und Zugänglichkeit am Standort besonders wichtig. Eine mögliche Abholung und deren Konditionen werden persönlich abgestimmt.', ['Diagnose oder Symptome', 'Fahrbereitschaft', 'Fahrzeugstandort', 'Vorhandene Unterlagen']],
+    ],
+    faqs: [['Muss eine Werkstattdiagnose vorliegen?', 'Nein. Wenn keine Diagnose vorliegt, beschreiben Sie die Symptome und bekannte Vorgeschichte so genau wie möglich.'], ['Wird jedes Auto mit Motorschaden angekauft?', 'Dafür gibt es keine pauschale Zusage. Jede Anfrage wird individuell geprüft.'], ['Kann ein nicht startendes Fahrzeug angefragt werden?', 'Ja. Geben Sie an, dass der Motor nicht startet und ob das Auto noch roll- und lenkfähig ist.']],
+    related: ['/schrottauto-verkaufen/', '/fahrzeugabholung/', '/auto-mit-getriebeschaden-verkaufen/'],
+  },
+  {
+    path: '/auto-mit-getriebeschaden-verkaufen/', type: 'service', nav: 'Getriebeschaden',
+    title: 'Auto mit Getriebeschaden verkaufen | Bundesweite Anfrage',
+    description: 'Fahrzeug mit Getriebeschaden bundesweit anfragen: Zustand und Diagnose übermitteln, Konditionen und Abholung individuell klären.',
+    h1: 'Auto mit Getriebeschaden verkaufen',
+    intro: 'Ein defektes Getriebe kann hohe Reparaturkosten verursachen und die Fahrbereitschaft einschränken. Übermitteln Sie uns die vorhandenen Informationen, wenn Sie das Fahrzeug stattdessen anfragen möchten.',
+    sections: [
+      ['Getriebeschaden nachvollziehbar beschreiben', 'Hilfreich sind Angaben zur Getriebeart, zu Geräuschen, Warnmeldungen und dem Fahrverhalten. Teilen Sie mit, ob eine Werkstattdiagnose vorliegt und ob das Fahrzeug noch sicher bewegt werden kann.'],
+      ['Individuelle Entscheidung', 'Alter, Gesamtzustand, Laufleistung und Reparaturkosten beeinflussen die Entscheidung zwischen Reparatur und Abgabe. Wir versprechen keinen pauschalen Fahrzeugwert; mögliche Konditionen werden anhand Ihrer Anfrage geklärt.'],
+      ['Abholung vorbereiten', 'Bei fehlender Fahrbereitschaft muss bekannt sein, ob sich das Auto rollen und lenken lässt. Beschreiben Sie Stellplatz, Zufahrt und mögliche Hindernisse.', ['Automatik- oder Schaltgetriebe', 'Bekannte Diagnose', 'Roll- und Lenkfähigkeit', 'Standort und Zufahrt']],
+    ],
+    faqs: [['Kann ich das Auto ohne genaue Diagnose anfragen?', 'Ja. Beschreiben Sie dann die wahrnehmbaren Symptome und bekannte Warnmeldungen.'], ['Sind die Konditionen vorher festgelegt?', 'Nein. Sie werden nach Prüfung von Fahrzeug, Schaden und Standort individuell abgestimmt.'], ['Ist eine Abholung möglich?', 'Eine mögliche Abholung wird im Rahmen der konkreten Anfrage geprüft und vereinbart.']],
+    related: ['/auto-mit-motorschaden-verkaufen/', '/schrottauto-verkaufen/', '/fahrzeugabholung/'],
+  },
+  {
+    path: '/auto-ohne-tuev/', type: 'service', nav: 'Auto ohne TÜV',
+    title: 'Auto ohne TÜV verkaufen oder verschrotten | Bundesweit',
+    description: 'Auto ohne TÜV bundesweit anfragen: Zustand, Standort und Fahrbereitschaft mitteilen und individuelle Möglichkeiten klären.',
+    h1: 'Auto ohne TÜV anfragen',
+    intro: 'Ein abgelaufener TÜV bedeutet nicht automatisch, dass ein Fahrzeug wertlos ist. Wenn Sie keine erneute Hauptuntersuchung oder Reparatur planen, können Sie das Auto mit seinen Zustandsdaten bundesweit anfragen.',
+    sections: [
+      ['Zustand statt Plakette betrachten', 'Für die Einschätzung sind neben dem TÜV-Status der technische und optische Zustand wichtig. Nennen Sie bekannte Mängel, Laufleistung, Baujahr und ob das Fahrzeug aktuell zugelassen und fahrbereit ist.'],
+      ['Nicht ohne Weiteres im Straßenverkehr bewegen', 'Ohne gültige Hauptuntersuchung können rechtliche und versicherungsbezogene Einschränkungen gelten. Organisieren Sie keine eigenständige Fahrt, ohne vorher zu klären, ob diese zulässig ist. Eine mögliche Abholung kann individuell besprochen werden.'],
+      ['Angaben für eine schnelle Klärung', 'Je vollständiger die Anfrage, desto weniger Rückfragen sind nötig.', ['Datum der letzten Hauptuntersuchung', 'Bekannte technische Mängel', 'Zulassungsstatus', 'Standort und Fahrbereitschaft']],
+    ],
+    faqs: [['Kann ich ein Auto mit abgelaufenem TÜV anfragen?', 'Ja. Geben Sie den TÜV-Status und bekannte Mängel in der Anfrage an.'], ['Muss das Fahrzeug abgemeldet sein?', 'Der Zulassungsstatus sollte bei der Anfrage genannt werden. Das weitere Vorgehen wird passend zur Situation abgestimmt.'], ['Ist eine bundesweite Abholung garantiert?', 'Anfragen sind bundesweit möglich. Ob und wie eine Abholung erfolgt, wird individuell vereinbart.']],
+    related: ['/fahrzeugabholung/', '/autoverschrottung/', '/ratgeber/auto-vor-verschrottung-abmelden/'],
+  },
+  {
+    path: '/ratgeber/autoverschrottung-kosten/', type: 'guide', nav: 'Kosten',
+    title: 'Was kostet eine Autoverschrottung? | Ratgeber',
+    description: 'Welche Faktoren Kosten und Konditionen einer Autoverschrottung beeinflussen und warum eine individuelle Fahrzeuganfrage nötig ist.',
+    h1: 'Was kostet eine Autoverschrottung?',
+    intro: 'Eine seriöse Pauschalantwort ist ohne Fahrzeug- und Standortdaten kaum möglich. Zustand, Vollständigkeit, Abholaufwand und individuelle Rahmenbedingungen beeinflussen die Konditionen.',
+    sections: [
+      ['Diese Faktoren spielen eine Rolle', 'Ein rollfähiges Fahrzeug an einem frei zugänglichen Standort stellt andere Anforderungen als ein stark beschädigtes Auto in einer Tiefgarage. Auch fehlende Teile oder Unterlagen können die Klärung beeinflussen.', ['Fahrzeugtyp und Zustand', 'Roll- und Lenkfähigkeit', 'Standort und Zufahrt', 'Vollständigkeit und Unterlagen']],
+      ['Warum pauschal „kostenlos“ nicht seriös ist', 'Wer ohne Kenntnis des Fahrzeugs immer eine kostenlose Abholung verspricht, lässt wesentliche Unterschiede außer Acht. Bei Auto-Verschrottung24 werden Konditionen anhand der konkreten Anfrage abgestimmt. Die Anfrage selbst ist kostenlos und unverbindlich.'],
+      ['So erhalten Sie eine konkrete Einschätzung', 'Senden Sie vollständige Fahrzeugdaten und beschreiben Sie Schäden ehrlich. Nennen Sie den genauen Standort und besondere Hindernisse. Auf dieser Grundlage können die nächsten Schritte persönlich besprochen werden.'],
+    ],
+    faqs: [['Ist die Anfrage kostenlos?', 'Ja, das Übermitteln einer Fahrzeuganfrage ist kostenlos und unverbindlich.'], ['Ist die Abholung automatisch kostenlos?', 'Nein. Die Konditionen werden individuell festgelegt.'], ['Welche Angaben beeinflussen die Einschätzung?', 'Vor allem Fahrzeug, Zustand, Fahrbereitschaft, Standort und Zugänglichkeit.']],
+    related: ['/autoverschrottung/', '/fahrzeugabholung/', '/autoentsorgung/'],
+  },
+  {
+    path: '/ratgeber/auto-verschrotten-ablauf/', type: 'guide', nav: 'Ablauf',
+    title: 'Auto verschrotten: Ablauf Schritt für Schritt | Ratgeber',
+    description: 'Auto verschrotten: So bereiten Sie Fahrzeugdaten, Unterlagen und Abholung vor und vermeiden unnötige Rückfragen.',
+    h1: 'Auto verschrotten: Ablauf der Anfrage',
+    intro: 'Eine gut vorbereitete Anfrage erleichtert die Abstimmung. Von den Fahrzeugdaten bis zum vereinbarten Abholtermin lassen sich die wichtigsten Schritte übersichtlich vorbereiten.',
+    sections: [
+      ['1. Fahrzeugdaten zusammenstellen', 'Notieren Sie Marke, Modell, Baujahr, Standort und bekannte Schäden. Geben Sie ehrlich an, ob das Auto startet, rollt und lenkfähig ist.'],
+      ['2. Anfrage senden und Details klären', 'Nutzen Sie das Formular, Telefon oder WhatsApp. Nach der ersten Prüfung werden offene Fragen und individuelle Konditionen persönlich besprochen. Eine Anfrage allein ist noch keine verbindliche Terminvereinbarung.'],
+      ['3. Vereinbarten Termin vorbereiten', 'Entfernen Sie persönliche Gegenstände, legen Sie vorhandene Schlüssel und Unterlagen bereit und sorgen Sie, soweit möglich, für einen zugänglichen Stellplatz.', ['Persönliche Gegenstände entfernen', 'Unterlagen bereitlegen', 'Zufahrt freihalten', 'Absprachen beachten']],
+    ],
+    faqs: [['Wie beginne ich?', 'Senden Sie zunächst die wichtigsten Fahrzeug- und Standortdaten.'], ['Wann steht der Abholtermin fest?', 'Erst nachdem die Einzelheiten persönlich abgestimmt und ein Termin vereinbart wurde.'], ['Was sollte am Fahrzeug vorbereitet werden?', 'Entfernen Sie persönliche Gegenstände und halten Sie vorhandene Schlüssel und Dokumente bereit.']],
+    related: ['/autoverschrottung/', '/fahrzeugabholung/', '/ratgeber/auto-vor-verschrottung-abmelden/'],
+  },
+  {
+    path: '/ratgeber/auto-ohne-fahrzeugbrief-verschrotten/', type: 'guide', nav: 'Ohne Fahrzeugbrief',
+    title: 'Auto ohne Fahrzeugbrief verschrotten – was tun?',
+    description: 'Fahrzeugbrief verloren? Welche Angaben Sie vor einer Verschrottungsanfrage klären und warum Eigentumsnachweise wichtig sind.',
+    h1: 'Auto ohne Fahrzeugbrief verschrotten',
+    intro: 'Fehlt die Zulassungsbescheinigung Teil II, sollte die Situation vor einer Abholung ausdrücklich geklärt werden. Der fehlende Fahrzeugbrief darf bei der Anfrage nicht verschwiegen werden.',
+    sections: [
+      ['Warum der Fahrzeugbrief wichtig ist', 'Die Zulassungsbescheinigung Teil II enthält zentrale Fahrzeug- und Halterinformationen. Sie ist ein wichtiges Dokument, ersetzt allein jedoch keinen eindeutigen Eigentumsnachweis. Bei fehlenden Dokumenten können zusätzliche Nachweise oder behördliche Schritte erforderlich sein.'],
+      ['Verlust frühzeitig angeben', 'Teilen Sie bereits in der ersten Anfrage mit, dass der Fahrzeugbrief fehlt. Erklären Sie, warum das Dokument nicht vorliegt und welche anderen Unterlagen vorhanden sind. So kann vor einem Termin geklärt werden, ob weitere Nachweise benötigt werden.'],
+      ['Keine pauschale Zusage möglich', 'Die Anforderungen hängen von der konkreten Situation und den zuständigen Stellen ab. Diese Seite ersetzt keine behördliche oder rechtliche Auskunft. Fragen Sie bei Unsicherheit die zuständige Zulassungsstelle.'],
+    ],
+    faqs: [['Kann ich ohne Fahrzeugbrief direkt einen Termin buchen?', 'Der Dokumentenverlust muss zuerst im Rahmen der Anfrage geklärt werden. Eine pauschale Zusage ist nicht möglich.'], ['Wen frage ich bei rechtlichen Unsicherheiten?', 'Verbindliche Auskünfte erhalten Sie bei der zuständigen Zulassungsstelle.'], ['Soll ich den Verlust in der Anfrage erwähnen?', 'Ja, unbedingt. Nennen Sie auch die übrigen vorhandenen Unterlagen.']],
+    related: ['/autoverschrottung/', '/ratgeber/auto-verschrotten-ablauf/', '/ratgeber/auto-vor-verschrottung-abmelden/'],
+  },
+  {
+    path: '/ratgeber/auto-vor-verschrottung-abmelden/', type: 'guide', nav: 'Abmeldung',
+    title: 'Auto vor der Verschrottung abmelden? | Ratgeber',
+    description: 'Wann die Abmeldung eines Fahrzeugs geklärt werden sollte und welche Angaben für die Abstimmung vor der Abholung wichtig sind.',
+    h1: 'Auto vor der Verschrottung abmelden?',
+    intro: 'Ob ein Fahrzeug bereits vor einem vereinbarten Termin abgemeldet werden sollte, hängt vom geplanten Ablauf ab. Klären Sie den Zulassungsstatus deshalb frühzeitig und treffen Sie keine Annahmen.',
+    sections: [
+      ['Zulassungsstatus bei der Anfrage nennen', 'Teilen Sie mit, ob das Fahrzeug zugelassen, abgemeldet oder anderweitig außer Betrieb gesetzt ist. Diese Information ist besonders wichtig, wenn das Auto nicht mehr regulär bewegt werden kann.'],
+      ['Abmeldung nicht ungeklärt aufschieben', 'Solange ein Fahrzeug zugelassen ist, können laufende Pflichten und Kosten bestehen. Verbindliche Informationen zu Ihrem Einzelfall erhalten Sie von Zulassungsstelle und Versicherung. Stimmen Sie den zeitlichen Ablauf zusätzlich mit dem Ansprechpartner für die Fahrzeuganfrage ab.'],
+      ['Unterlagen geordnet bereithalten', 'Bewahren Sie vorhandene Kennzeichen und Fahrzeugdokumente sicher auf. Welche Unterlagen im konkreten Ablauf benötigt werden, sollte vor dem Termin geklärt werden.', ['Zulassungsstatus mitteilen', 'Versicherung und Behörde fragen', 'Unterlagen bereithalten', 'Terminablauf abstimmen']],
+    ],
+    faqs: [['Muss jedes Auto vorher abgemeldet werden?', 'Das konkrete Vorgehen sollte vor dem Termin abgestimmt werden. Verbindliche behördliche Auskünfte erteilt die Zulassungsstelle.'], ['Warum ist der Zulassungsstatus wichtig?', 'Er beeinflusst den organisatorischen Ablauf und mögliche laufende Pflichten.'], ['Kann ich ein bereits abgemeldetes Auto anfragen?', 'Ja. Geben Sie an, dass das Fahrzeug abgemeldet und möglicherweise nicht fahrbereit ist.']],
+    related: ['/autoverschrottung/', '/auto-ohne-tuev/', '/ratgeber/auto-verschrotten-ablauf/'],
+  },
+  {
+    path: '/ratgeber/verwertungsnachweis/', type: 'guide', nav: 'Verwertungsnachweis',
+    title: 'Was ist ein Verwertungsnachweis? | Ratgeber',
+    description: 'Grundlagen zum Verwertungsnachweis: Wofür das Dokument dient und warum die konkrete Dokumentation vorab geklärt werden sollte.',
+    h1: 'Was ist ein Verwertungsnachweis?',
+    intro: 'Der Verwertungsnachweis ist ein Dokument im Zusammenhang mit der ordnungsgemäßen Behandlung eines Altfahrzeugs. Ob und in welchem Ablauf Sie einen solchen Nachweis benötigen, sollte für Ihren konkreten Fall geklärt werden.',
+    sections: [
+      ['Zweck des Dokuments', 'Ein Verwertungsnachweis dokumentiert, dass ein Altfahrzeug einer dafür vorgesehenen Behandlung zugeführt wurde. Er kann im Zusammenhang mit der endgültigen Außerbetriebsetzung eines Fahrzeugs relevant sein.'],
+      ['Nicht mit beliebigen Belegen verwechseln', 'Eine Abholbestätigung, ein Kaufvertrag oder eine einfache Übergabequittung ist nicht automatisch ein Verwertungsnachweis. Fragen Sie vor einer Übergabe ausdrücklich, welche Dokumente im vereinbarten Ablauf vorgesehen sind.'],
+      ['Verbindliche Anforderungen klären', 'Diese Übersicht ist eine allgemeine Orientierung und keine Zusage, dass Auto-Verschrottung24 selbst einen Verwertungsnachweis ausstellt. Verbindliche Anforderungen können Sie bei der zuständigen Zulassungsstelle erfragen.'],
+    ],
+    faqs: [['Stellt Auto-Verschrottung24 selbst den Nachweis aus?', 'Diese Seite enthält keine solche Zusage. Die Dokumentation muss für die konkrete Anfrage vorab geklärt werden.'], ['Ist eine Übergabequittung dasselbe?', 'Nein, eine einfache Übergabequittung ist nicht automatisch ein Verwertungsnachweis.'], ['Wo erhalte ich eine verbindliche Auskunft?', 'Wenden Sie sich für behördliche Anforderungen an die zuständige Zulassungsstelle.']],
+    related: ['/autoverschrottung/', '/ratgeber/auto-verschrotten-ablauf/', '/ratgeber/auto-vor-verschrottung-abmelden/'],
+  },
+]
+
+export const seoPageMap = new Map(seoPages.map((page) => [page.path, page]))
+
+export const normalizePath = (path) => {
+  if (!path || path === '/') return '/'
+  return `/${path.split('/').filter(Boolean).join('/')}/`
+}
+
+export const getSeoPage = (path) => seoPageMap.get(normalizePath(path))

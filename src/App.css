@@ -126,6 +126,7 @@
 .types-copy > p { max-width: 520px; }
 .check-list { list-style: none; padding: 0; margin: 29px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
 .check-list li { display: flex; gap: 9px; align-items: center; font-size: 14px; font-weight: 700; }
+.check-list a { text-decoration-color: #a3bd47; text-underline-offset: 3px; }
 .check-list svg { background: var(--green); color: var(--forest); border-radius: 50%; padding: 2px; }
 
 .faq-grid { display: grid; grid-template-columns: .7fr 1fr; gap: 90px; align-items: start; }
@@ -152,8 +153,6 @@
 .legal-copy h3:not(:first-child) { margin-top: 27px; }
 .legal-copy p { color: var(--muted); line-height: 1.7; margin: 0; font-size: 14px; }
 .legal-copy a { color: #567100; }
-.legal-note { margin-top: 28px !important; padding: 18px; background: #fffbe6; border-left: 3px solid #d0b62b; }
-
 footer { background: #0b1d17; color: #a6b4ae; padding: 70px 0 25px; }
 .footer-main { display: grid; grid-template-columns: 1.7fr 1fr .7fr .7fr; gap: 60px; padding-bottom: 55px; }
 .footer-brand { color: white; margin-bottom: 20px; }
